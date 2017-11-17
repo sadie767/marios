@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :products do
-    resources :reviews
-  end
-end
+  resources :categories do
+    resources :products
+      end
+      resources :products do
+        resources :reviews
+      end
+    end
