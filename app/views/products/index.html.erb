@@ -2,10 +2,11 @@
 
 <ul>
   <% @products.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %><%= product.cost %></li>
+    <li><%= link_to product.name, product_path(product) %><br>
+    <%= product.cost %></li>
   <% end %>
 </ul>
 
 <hr>
 
-<%= link_to "New Product", new_product_path %>
+<%= link_to "New Wine", new_product_path %>

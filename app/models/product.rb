@@ -4,5 +4,4 @@ class Product < ActiveRecord::Base
   validates :country, :presence => true
 
   has_many :reviews
-  belongs_to :category
 end
